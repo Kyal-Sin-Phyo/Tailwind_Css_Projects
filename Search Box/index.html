@@ -10,7 +10,7 @@
 
         @theme {
             --shadow-box:  -3px -3px 5px #fff, 3px 3px 5px #ccc;
-            --shadow-search-icon: inset 3px 3px 5px #ccc,
+            --shadow-inset-box: inset 3px 3px 5px #ccc,
                                   inset -3px -3px 5px #fff;
         }
         
@@ -21,9 +21,10 @@
     <div id="search-box" class="has-[:checked]:w-85 relative flex justify-end items-center overflow-hidden shadow-box bg-transparent w-13 h-13 transition-all duration-300 rounded-full">
         <input type="checkbox" class="hidden peer" id="search">
         <input type="text" placeholder="Search..." class="peer-checked:px-3 peer-checked:pr-15 peer-checked:w-full absolute top-[50%] -translate-y-[50%] left-0 z-1 transition-all duration-300 rounded-full w-0 h-full text-blue-400 text-lg font-normal border-none font-mono outline-none bg-gray-200 ">
-        <label for="search" class="peer-checked:shadow-search-icon cursor-pointer z-9 bg-gray-200 w-13 h-full flex justify-center items-center text-lg rounded-full "><i class="bi bi-search"></i></label>
+        <label for="search" class="peer-checked:shadow-inset-box cursor-pointer z-9 bg-gray-200 w-13 h-full flex justify-center items-center text-lg rounded-full "><i class="bi bi-search"></i></label>
     </div>
 
 </body>
 </html>
+
 

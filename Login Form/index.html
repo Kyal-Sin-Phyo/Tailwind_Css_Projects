@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="mm">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Box | Only tailwind Css</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <style type="text/tailwindcss">
+        @theme {
+            --shadow-box:  -3px -3px 5px #fff, 3px 3px 5px #ccc;
+            --shadow-inset-box: inset 2px 2px 3px #ccc,
+                                  inset -3px -3px 5px #fff;
+        }
+    </style>
+</head>
+<body class="flex justify-center items-center w-full h-screen bg-gray-100">
+    
+    <div id="search-box" class="has-[:checked]:[&_#signup]:-translate-y-[110%] relative overflow-hidden flex flex-col justify-start items-center gap-5 w-90 h-105 bg-gray-100 rounded-2xl shadow-box">
+        
+        <form class="relative z-10 bg-gray-100 flex flex-col justify-start items-center gap-3 p-5 transition-all duration-500 w-full h-full" id="signup">
+
+            <h2 class="font-medium text-gray-700 text-3xl mb-5 font-sans">Login Form</h2>
+            
+            <div class="has-[:focus]:shadow-inset-box mb-2 flex justify-center items-center w-full h-11 relative rounded-full overflow-hidden bg-gray-100 shadow-box transition-shadow duration-300 hover:shadow-sm">
+                <label for="email" class="absolute top-[50%] left-3 -translate-y-[50%] font-sans text-gray-700 pointer-events-none"><i class="bi bi-envelope text-lg"></i></label>
+                <input type="email" id="email" class="w-full h-full text-lg font-sans text-blue-500 outline-none border-none pl-10 pr-3" placeholder="Email or Phone">
+            </div>
+
+            <div class="has-[:focus]:shadow-inset-box flex justify-center items-center w-full h-11 relative rounded-full overflow-hidden bg-gray-100 shadow-box transition-shadow duration-300 hover:shadow-sm">
+                <label for="pwd" class="absolute top-[50%] left-3 -translate-y-[50%] font-sans text-gray-700 pointer-events-none"><i class="bi bi-lock text-lg"></i></label>
+                <input type="password" id="pwd" class="w-full h-full text-lg font-sans text-blue-500 outline-none border-none pl-10 pr-3" placeholder="Password">
+            </div>
+            <a href="#" class="hover:underline self-start font-sans text-blue-500 text-[16px]">Forgot Password?</a>
+
+            <button type="submit" class="hover:shadow-md focus:shadow-inset-box transition-all duration-300 w-full h-12 my-3 text-lg font-sans font-medium text-gray-600 bg-gray-100 cursor-pointer shadow-box rounded-full">Sign in</button>
+            
+            <div class="text-center">
+                <p class="text-sm text-gray-500 font-medium font-sans">Don't have an account?</p>
+                <label for="signin-ckb" class="hover:underline text-blue-500 cursor-pointer text-sm font-medium">Sign Up Now</label>
+                <input type="checkbox" class="hidden peer" id="signin-ckb">
+            </div>
+
+        </form>
+
+        <form class="absolute z-9 top-[50%] left-[50%] -translate-y-[50%] -translate-x-[50%] bg-gray-100  p-5 flex flex-col justify-start items-center gap-3 w-full h-full"  id="signin">
+
+            <h2 class="font-medium text-gray-700 text-3xl mb-5 font-sans">Register Form</h2>
+            
+            <div class="has-[:focus]:shadow-inset-box mb-2 flex justify-center items-center w-full h-11 relative rounded-full overflow-hidden bg-gray-100 shadow-box transition-shadow duration-300 hover:shadow-sm">
+                <label for="email" class="absolute top-[50%] left-3 -translate-y-[50%] font-sans text-gray-700 pointer-events-none"><i class="bi bi-envelope text-lg"></i></label>
+                <input type="email" id="email" class="w-full h-full text-lg font-sans text-blue-500 outline-none border-none pl-10 pr-3" placeholder="Email or Phone">
+            </div>
+
+            <div class="has-[:focus]:shadow-inset-box flex justify-center items-center w-full h-11 relative rounded-full overflow-hidden bg-gray-100 shadow-box transition-shadow duration-300 hover:shadow-sm">
+                <label for="pwd" class="absolute top-[50%] left-3 -translate-y-[50%] font-sans text-gray-700 pointer-events-none"><i class="bi bi-lock text-lg"></i></label>
+                <input type="password" id="pwd" class="w-full h-full text-lg font-sans text-blue-500 outline-none border-none pl-10 pr-3" placeholder="Password">
+            </div>
+
+            <div class="has-[:focus]:shadow-inset-box flex justify-center items-center w-full h-11 relative rounded-full overflow-hidden bg-gray-100 shadow-box transition-shadow duration-300 hover:shadow-sm">
+                <label for="re-pwd" class="absolute top-[50%] left-3 -translate-y-[50%] font-sans text-gray-700 pointer-events-none"><i class="bi bi-lock text-lg"></i></label>
+                <input type="password" id="re-pwd" class="w-full h-full text-lg font-sans text-blue-500 outline-none border-none pl-10 pr-3" placeholder="Re-Password">
+            </div>
+
+            <button type="submit" class="hover:shadow-md focus:shadow-inset-box transition-all duration-300 w-full h-12 my-3 text-lg font-sans font-medium text-gray-600 bg-gray-100 cursor-pointer shadow-box rounded-full">Sign Up</button>
+            
+            <div class="text-center">
+                <p class="text-sm text-gray-500 font-medium font-sans">Already have an account?</p>
+                <label for="signin-ckb" class="hover:underline text-blue-500 cursor-pointer text-sm font-medium">Sign In Now</label>
+            </div>
+            
+        </form>
+        
+
+    </div>
+
+</body>
+</html>

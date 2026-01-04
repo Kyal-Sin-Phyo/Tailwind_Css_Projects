@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="mm">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media Buttons | Only tailwind Css</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <style type="text/tailwindcss">
+        @theme {
+            --shadow-box:  -3px -3px 5px #fff, 3px 3px 5px #ccc;
+            --shadow-inset-box: inset 3px 3px 5px #ccc,
+                                  inset -3px -3px 5px #fff;
+
+            --shadow-inset-outset: -3px -3px 3px #fff,
+                                   3px 3px 3px #ccc,
+                                   inset 3px 3px 3px #ccc,
+                                   inset -3px -3px 3px #fff;
+        }
+    </style>
+</head>
+<body class="flex justify-center items-center w-full h-screen p-5 bg-gray-200">
+    
+    <div class="max-sm:w-full h-50 px-2 flex flex-row justify-center items-center">
+
+        <div class="w-full h-auto p-3 flex flex-wrap justify-center items-center  gap-5">
+            <button class="w-15 h-15 text-3xl text-blue-600 rounded-full bg-transparent outline-none">
+                <input type="checkbox" class="hidden peer" id="facebook-cb">
+                <label for="facebook-cb" class="peer-checked:shadow-inset-outset flex justify-center items-center w-full h-full rounded-full shadow-box overflow-hidden cursor-pointer border-7 border-gray-200"><i class="bi bi-facebook"></i></label>
+            </button>
+
+            <button class="w-15 h-15 text-2xl text-black rounded-full bg-transparent outline-none">
+                <input type="checkbox" class="hidden peer" id="x-cb">
+                <label for="x-cb" class="peer-checked:shadow-inset-outset flex justify-center items-center w-full h-full rounded-full shadow-box overflow-hidden cursor-pointer border-7 border-gray-200"><i class="bi bi-twitter-x"></i></label>
+            </button>
+
+            <button class="w-15 h-15 text-2xl text-pink-600 rounded-full bg-transparent outline-none">
+                <input type="checkbox" class="hidden peer" id="instagram-cb">
+                <label for="instagram-cb" class="peer-checked:shadow-inset-outset flex justify-center items-center w-full h-full rounded-full shadow-box overflow-hidden cursor-pointer border-7 border-gray-200"><i class="bi bi-instagram"></i></label>
+            </button>
+
+            <button class="w-15 h-15 text-2xl text-blue-800 rounded-full bg-transparent outline-none">
+                <input type="checkbox" class="hidden peer" id="linkedin-cb">
+                <label for="linkedin-cb" class="peer-checked:shadow-inset-outset flex justify-center items-center w-full h-full rounded-full shadow-box overflow-hidden cursor-pointer border-7 border-gray-200"><i class="bi bi-linkedin"></i></label>
+            </button>
+
+            <button class="w-15 h-15 text-2xl text-gray-950 rounded-full bg-transparent outline-none">
+                <input type="checkbox" class="hidden peer" id="github-cb">
+                <label for="github-cb" class="peer-checked:shadow-inset-outset flex justify-center items-center w-full h-full rounded-full shadow-box overflow-hidden cursor-pointer border-7 border-gray-200"><i class="bi bi-github"></i></label>
+            </button>
+
+            <button class="w-15 h-15 text-3xl text-blue-500 rounded-full bg-transparent outline-none">
+                <input type="checkbox" class="hidden peer" id="telegram-cb">
+                <label for="telegram-cb" class="peer-checked:shadow-inset-outset flex justify-center items-center w-full h-full rounded-full shadow-box overflow-hidden cursor-pointer border-7 border-gray-200"><i class="bi bi-telegram"></i></label>
+            </button>
+
+            <button class="w-15 h-15 text-2xl text-gray-500 rounded-full bg-transparent outline-none">
+                <input type="checkbox" class="hidden peer" id="discord-checkbox">
+                <label for="discord-checkbox" class="peer-checked:shadow-inset-outset flex justify-center items-center w-full h-full rounded-full shadow-box overflow-hidden cursor-pointer border-7 border-gray-200"><i class="bi bi-discord"></i></label>
+            </button>
+
+            <button class="w-15 h-15 text-2xl text-yellow-500 rounded-full bg-transparent outline-none">
+                <input type="checkbox" class="hidden peer" id="snapchat-checkbox">
+                <label for="snapchat-checkbox" class="peer-checked:shadow-inset-outset flex justify-center items-center w-full h-full rounded-full shadow-box overflow-hidden cursor-pointer border-7 border-gray-200"><i class="bi bi-snapchat"></i></label>
+            </button>
+
+            <button class="w-15 h-15 text-2xl text-green-500 rounded-full bg-transparent outline-none">
+                <input type="checkbox" class="hidden peer" id="whatsapp-checkbox">
+                <label for="whatsapp-checkbox" class="peer-checked:shadow-inset-outset flex justify-center items-center w-full h-full rounded-full shadow-box overflow-hidden cursor-pointer border-7 border-gray-200"><i class="bi bi-whatsapp"></i></label>
+            </button>
+
+            <button class="w-15 h-15 text-2xl text-gray-800 rounded-full bg-transparent outline-none">
+                <input type="checkbox" class="hidden peer" id="signal-checkbox">
+                <label for="signal-checkbox" class="peer-checked:shadow-inset-outset flex justify-center items-center w-full h-full rounded-full shadow-box overflow-hidden cursor-pointer border-7 border-gray-200"><i class="bi bi-signal"></i></label>
+            </button>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
